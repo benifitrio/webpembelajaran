@@ -10,22 +10,8 @@ links.forEach(link => {
     }
 });
 
-function playPause() {
-    if (track.paused) {
-        track.play();
-        //controlBtn.textContent = "Pause";
-        btn.classList.add("pause");
-    } else {
-        track.pause();
-        //controlBtn.textContent = "Play";
-        btn.classList.add("play");
-    }
-}
 
-btn.addEventListener("click", playPause);
-track.addEventListener("ended", function() {
-    btn.classList.add("play");
-});
+
 
 (function() {
     "use strict";
@@ -187,16 +173,7 @@ track.addEventListener("ended", function() {
         });
     }
 
-    /**
-     * Initiate  glightbox 
-     */
-    // const glightbox = GLightbox({
-    //     selector: '.glightbox'
-    // });
 
-    /**
-     * Skills animation
-     */
     let skilsContent = select('.skills-content');
     if (skilsContent) {
         new Waypoint({
