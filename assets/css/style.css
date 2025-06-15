@@ -1073,6 +1073,9 @@ section {
     .why-us .img {
         min-height: 200px;
     }
+    .img-1 {
+        width: 50% !important;
+    }
 }
 
 
@@ -1161,6 +1164,10 @@ section {
     color: #47b2e4;
     font-size: 36px;
     transition: 0.3s;
+}
+
+.card-header {
+    background-color: rgba(0, 0, 0, .03)!important;
 }
 
 .icon-box {
